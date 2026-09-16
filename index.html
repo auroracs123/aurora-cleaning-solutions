@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>House Cleaning Services in Milton & Oakville | Aurora Cleaning Solutions</title>
+
+    <meta name="description" content="Aurora Cleaning Solutions provides professional house cleaning services in Milton, Oakville and the surrounding Ontario region. Explore residential, deep, condo, Airbnb, move-in and move-out cleaning services.">
+
+    <meta name="keywords" content="house cleaning services in Milton, house cleaning services in Oakville, house cleaning Milton Ontario, house cleaning Oakville Ontario, residential cleaning Milton, cleaning services Ontario">
+
+    <meta name="author" content="Aurora Cleaning Solutions">
+
+    <meta property="og:title" content="House Cleaning Services in Milton & Oakville | Aurora Cleaning Solutions">
+    <meta property="og:description" content="Professional house cleaning and residential cleaning services in Milton, Oakville and surrounding Ontario communities.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://auroracs123.github.io/aurora-cleaning-solutions/">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #263238;
+            background: #f7faf9;
+            line-height: 1.7;
+        }
+
+        a {
+            color: inherit;
+        }
+
+        .container {
+            width: min(1120px, 92%);
+            margin: auto;
+        }
+
+        header {
+            background: #ffffff;
+            border-bottom: 1px solid #e6ecea;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav {
+            min-height: 72px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 25px;
+        }
+
+        .logo {
+            text-decoration: none;
+            font-size: 21px;
+            font-weight: 700;
+            color: #164e49;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 24px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            font-size: 14px;
+            color: #40504f;
+        }
+
+        .nav-links a:hover {
+            color: #13786e;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #e9f8f4, #f9fcfb);
+            padding: 90px 0 80px;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .eyebrow {
+            display: inline-block;
+            background: #d7f1eb;
+            color: #17665e;
+            padding: 7px 13px;
+            border-radius: 30px;
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 18px;
+        }
+
+        h1 {
+            font-size: clamp(38px, 5vw, 62px);
+            line-height: 1.08;
+            color: #163c39;
+            margin-bottom: 22px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #52615f;
+            max-width: 680px;
+            margin-bottom: 30px;
+        }
+
+        .buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 13px;
+        }
+
+        .btn {
+            display: inline-block;
+            text-decoration: none;
+            padding: 13px 21px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 15px;
+            transition: 0.2s ease;
+        }
+
+        .btn-primary {
+            background: #13786e;
+            color: #ffffff;
+        }
+
+        .btn-primary:hover {
+            background: #0e5e57;
+        }
+
+        .btn-secondary {
+            background: #ffffff;
+            border: 1px solid #b9d5d0;
+            color: #17665e;
+        }
+
+        .btn-secondary:hover {
+            background: #eef8f5;
+        }
+
+        .hero-card {
+            background: #ffffff;
+            border: 1px solid #dceae7;
+            border-radius: 18px;
+            padding: 30px;
+            box-shadow: 0 18px 45px rgba(23, 67, 61, 0.08);
+        }
+
+        .hero-card h2 {
+            color: #163c39;
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+
+        .hero-card p {
+            font-size: 15px;
+            margin-bottom: 18px;
+        }
+
+        .check-list {
+            list-style: none;
+        }
+
+        .check-list li {
+            padding: 7px 0;
+            color: #43514f;
+        }
+
+        .check-list li::before {
+            content: "✓";
+            color: #13786e;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        section {
+            padding: 80px 0;
+        }
+
+        .section-heading {
+            max-width: 720px;
+            margin-bottom: 42px;
+        }
+
+        .section-heading h2 {
+            font-size: 36px;
+            line-height: 1.2;
+            color: #163c39;
+            margin-bottom: 13px;
+        }
+
+        .section-heading p {
+            color: #63716f;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .service-card {
+            background: #ffffff;
+            border: 1px solid #e0e9e7;
+            border-radius: 14px;
+            padding: 27px;
+        }
+
+        .service-card h3 {
+            color: #194d48;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        .service-card p {
+            color: #667270;
+            font-size: 15px;
+        }
+
+        .about {
+            background: #edf7f4;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 55px;
+            align-items: center;
+        }
+
+        .about h2 {
+            font-size: 37px;
+            line-height: 1.2;
+            color: #163c39;
+            margin-bottom: 18px;
+        }
+
+        .about p {
+            color: #53615f;
+            margin-bottom: 15px;
+        }
+
+        .location-box {
+            background: #ffffff;
+            padding: 32px;
+            border-radius: 16px;
+            border: 1px solid #dce9e6;
+        }
+
+        .location-box h3 {
+            color: #194d48;
+            margin-bottom: 15px;
+        }
+
+        .areas {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 9px;
+            margin-top: 18px;
+        }
+
+        .area {
+            background: #edf7f4;
+            color: #35615d;
+            border-radius: 30px;
+            padding: 7px 12px;
+            font-size: 13px;
+        }
+
+        .cta {
+            background: #163c39;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .cta h2 {
+            font-size: 38px;
+            margin-bottom: 15px;
+        }
+
+        .cta p {
+            max-width: 720px;
+            margin: 0 auto 27px;
+            color: #dceae7;
+        }
+
+        .cta .btn-secondary {
+            border: none;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .contact-card {
+            background: #ffffff;
+            border: 1px solid #e0e9e7;
+            border-radius: 14px;
+            padding: 27px;
+        }
+
+        .contact-card h3 {
+            color: #194d48;
+            margin-bottom: 10px;
+        }
+
+        .contact-card a {
+            color: #13786e;
+            text-decoration: none;
+            word-break: break-word;
+        }
+
+        footer {
+            background: #102d2a;
+            color: #c9d9d6;
+            padding: 30px 0;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        footer a {
+            color: #dceae7;
+            text-decoration: none;
+        }
+
+        @media (max-width: 850px) {
+            .hero-grid,
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .hero {
+                padding: 65px 0;
+            }
+        }
+
+        @media (max-width: 560px) {
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 60px 0;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+
+            .section-heading h2,
+            .about h2,
+            .cta h2 {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="container nav">
+        <a href="#top" class="logo">Aurora Cleaning Solutions</a>
+
+        <ul class="nav-links">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#areas">Service Areas</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</header>
+
+<main id="top">
+
+    <section class="hero">
+        <div class="container hero-grid">
+
+            <div>
+                <span class="eyebrow">Professional Cleaning Services in Ontario</span>
+
+                <h1>
+                    House Cleaning Services in Milton, Oakville & Ontario
+                </h1>
+
+                <p>
+                    Aurora Cleaning Solutions provides professional house and residential cleaning services in Milton, Oakville and surrounding Ontario communities. From regular home cleaning to deep cleaning and move-in or move-out cleaning, we help keep your space fresh, comfortable and well maintained.
+                </p>
+
+                <div class="buttons">
+                    <a class="btn btn-primary" href="https://auroracs.ca/book-online/">
+                        Request a Cleaning Quote
+                    </a>
+
+                    <a class="btn btn-secondary" href="https://maps.app.goo.gl/2WHJi4NgPP4XqG2e6" target="_blank" rel="noopener">
+                        View Us on Google
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-card">
+                <h2>A Cleaner Space, Less Stress</h2>
+
+                <p>
+                    Whether you need regular home cleaning or a one-time service, Aurora Cleaning Solutions offers flexible cleaning options based on your property and requirements.
+                </p>
+
+                <ul class="check-list">
+                    <li>Residential and household cleaning</li>
+                    <li>Standard and deep cleaning</li>
+                    <li>Condo and apartment cleaning</li>
+                    <li>Move-in and move-out cleaning</li>
+                    <li>Airbnb cleaning</li>
+                    <li>Post-renovation cleaning</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section id="services">
+        <div class="container">
+
+            <div class="section-heading">
+                <h2>House Cleaning Services for Different Needs</h2>
+
+                <p>
+                    Aurora Cleaning Solutions offers practical cleaning options for residential properties, offices, rental properties and customers who need a more detailed clean.
+                </p>
+            </div>
+
+            <div class="services-grid">
+
+                <div class="service-card">
+                    <h3>House Cleaning</h3>
+                    <p>
+                        Routine household cleaning for frequently used areas, helping keep your home clean and comfortable.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <h3>Deep Cleaning</h3>
+                    <p>
+                        A more thorough cleaning option for homes that need extra attention, including kitchens, bathrooms and living areas.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <h3>Condo Cleaning</h3>
+                    <p>
+                        Cleaning services designed for condominium and apartment spaces, including detailed cleaning and organization.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <h3>Move-In & Move-Out</h3>
+                    <p>
+                        Comprehensive cleaning to help prepare a property for new occupants or leave a home ready for its next residents.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <h3>Airbnb Cleaning</h3>
+                    <p>
+                        Property cleaning designed for short-term rentals, with attention to presentation and guest readiness.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <h3>Office Cleaning</h3>
+                    <p>
+                        Workplace cleaning covering surfaces, floors and commonly used areas to maintain a welcoming working environment.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <h3>After-Renovation Cleaning</h3>
+                    <p>
+                        Cleaning support after renovation work to remove dust, debris and other residue from the finished space.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <h3>Carpet Cleaning</h3>
+                    <p>
+                        Professional carpet cleaning to help remove dirt, stains and odors and refresh frequently used carpeted areas.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <h3>Recurring Cleaning</h3>
+                    <p>
+                        Flexible recurring cleaning options for customers who prefer regular weekly, bi-weekly or monthly service.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section id="about" class="about">
+        <div class="container about-grid">
+
+            <div>
+                <h2>About Aurora Cleaning Solutions</h2>
+
+                <p>
+                    Aurora Cleaning Solutions is a professional cleaning company based in Milton, Ontario, serving Milton and surrounding communities.
+                </p>
+
+                <p>
+                    The team provides cleaning solutions for different types of properties, from homes and condos to offices and short-term rental properties.
+                </p>
+
+                <p>
+                    Cleaning options can be arranged according to the condition of the property, the type of service required and the customer's preferred schedule.
+                </p>
+
+                <p>
+                    For service details, availability and quote requests, visit the official Aurora Cleaning Solutions website.
+                </p>
+
+                <a class="btn btn-primary" href="https://auroracs.ca/">
+                    Visit Official Website
+                </a>
+            </div>
+
+            <div class="location-box">
+                <h3>Serving Milton, Oakville & Nearby Communities</h3>
+
+                <p>
+                    Aurora Cleaning Solutions serves customers in Milton, Oakville and other surrounding Ontario communities.
+                </p>
+
+                <div class="areas">
+                    <span class="area">Milton</span>
+                    <span class="area">Oakville</span>
+                    <span class="area">Burlington</span>
+                    <span class="area">Brampton</span>
+                    <span class="area">Mississauga</span>
+                    <span class="area">Hamilton</span>
+                    <span class="area">Halton Hills</span>
+                    <span class="area">Waterdown</span>
+                    <span class="area">Ancaster</span>
+                    <span class="area">Stoney Creek</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section id="areas">
+        <div class="container">
+
+            <div class="section-heading">
+                <h2>House Cleaning in Milton and Oakville</h2>
+
+                <p>
+                    Looking for house cleaning services in Milton or Oakville? Aurora Cleaning Solutions provides residential and specialized cleaning options for customers throughout these communities and surrounding areas.
+                </p>
+            </div>
+
+            <div class="services-grid">
+
+                <div class="service-card">
+                    <h3>Cleaning Services in Milton</h3>
+                    <p>
+                        Residential, deep, condo, move-in and move-out, Airbnb and other cleaning services for properties in Milton, Ontario.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <h3>Cleaning Services in Oakville</h3>
+                    <p>
+                        Flexible cleaning solutions for homes, condos and other properties in Oakville and nearby communities.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <h3>Surrounding Ontario Communities</h3>
+                    <p>
+                        Service availability also extends to several nearby communities across the surrounding Ontario region.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="cta">
+        <div class="container">
+
+            <h2>Ready for a Cleaner Home?</h2>
+
+            <p>
+                Contact Aurora Cleaning Solutions to discuss your cleaning requirements or request a quote for your property.
+            </p>
+
+            <div class="buttons" style="justify-content:center;">
+
+                <a class="btn btn-primary" href="https://auroracs.ca/book-online/">
+                    Get a Cleaning Quote
+                </a>
+
+                <a class="btn btn-secondary" href="https://maps.app.goo.gl/2WHJi4NgPP4XqG2e6" target="_blank" rel="noopener">
+                    Google Business Profile
+                </a>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <section id="contact">
+        <div class="container">
+
+            <div class="section-heading">
+                <h2>Contact Aurora Cleaning Solutions</h2>
+
+                <p>
+                    Get in touch to discuss your cleaning requirements or learn more about available services.
+                </p>
+            </div>
+
+            <div class="contact-grid">
+
+                <div class="contact-card">
+                    <h3>Phone</h3>
+                    <a href="tel:+16476553526">
+                        +1 (647) 655-3526
+                    </a>
+                </div>
+
+                <div class="contact-card">
+                    <h3>Email</h3>
+                    <a href="mailto:auroracleanings@gmail.com">
+                        auroracleanings@gmail.com
+                    </a>
+                </div>
+
+                <div class="contact-card">
+                    <h3>Location</h3>
+                    <p>
+                        Milton & Surrounding Areas<br>
+                        Milton, Ontario, Canada
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+
+<footer>
+    <div class="container">
+        <p>
+            © 2026 Aurora Cleaning Solutions. House Cleaning Services in Milton, Oakville and Ontario.
+        </p>
+
+        <p style="margin-top:8px;">
+            <a href="https://auroracs.ca/">Official Website</a>
+            &nbsp; | &nbsp;
+            <a href="https://maps.app.goo.gl/2WHJi4NgPP4XqG2e6" target="_blank" rel="noopener">
+                Google Business Profile
+            </a>
+        </p>
+    </div>
+</footer>
+
+</body>
+</html>
